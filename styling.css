@@ -1,0 +1,207 @@
+body{
+    margin: 0;
+    padding: 0;
+    backdrop-filter: blur(10px);
+    display: flex;
+    background: linear-gradient(to top, black, rgb(54, 54, 54));
+    background-color: black;
+    height: 100%;
+    min-height: 100vh;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.50);
+    min-height: 70px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.20);
+    display: flex;
+    width: calc( 100% - 40px );
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 20px 5px 20px;
+    align-content: center;
+    color: white;
+    flex-wrap: wrap;
+    backdrop-filter: blur(10px); 
+}
+
+header a{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+header img{
+    width: 60px;
+    border-radius: 10px;
+    object-fit:scale-down;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: auto;
+    flex-shrink: 1;
+    flex-wrap: wrap;
+    overflow-x: auto;
+}
+
+header nav ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style: none;
+    align-content: center;
+    width: max-content;
+    margin: 0px;
+    padding: 0px;
+    flex-wrap: wrap;
+}
+
+header nav ul li{
+    display: flex;
+    padding: 0px;
+    margin: 0px;
+    flex-direction: row;
+    align-items: center;
+    font-size: large;
+}
+
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    transition: border-bottom 0.3s ease-in-out
+}
+
+header nav ul li a:hover{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.80);
+}
+
+header nav ul li a.chosen{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.80);
+}
+
+#main {
+    margin-top: 82px;
+    padding: 10px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#main.homepagemain {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    height: calc( 100vh - 102px );
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.homepagemain img{
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: scale-down;
+}
+
+#main .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0px;
+}
+
+#main .row{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#main a.start{
+    text-decoration: none;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border: solid 1px rgba(255, 255, 255, 0.50);
+    background: linear-gradient(0deg, grey, rgb(70, 70, 70));
+    transition: all 0.3s ease-in-out;
+}
+
+#main a.start:hover{
+    border: solid 1px white;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+
+#main a.contact{
+    text-decoration: none;
+    font-size: large;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    border: solid 1px rgba(255, 255, 255, 0.50);
+    transition: all 0.3s ease-in-out;
+}
+
+#main a.contact:hover{
+    border: solid 1px white;
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.05);
+}
+
+#main .center embed{
+    margin-top: 70px;
+    width: 100%;
+    height: calc( 100vh - 100px );
+}
+
+#main .basicPage{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    flex-grow: 1;
+    align-self: center;
+    width: 100%;
+    font-size: large;
+}
+
+#main .basicPage .header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.40);
+}
+
+#main .basicPage .content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#main .content a{
+    color: white;
+    text-decoration: underline;
+}
+
+#main .content a:hover{
+    color: yellowgreen;
+    text-decoration: underline;
+}
